@@ -106,7 +106,7 @@ img{
 }
 
 .container-small{
-    max-width: 65%;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -267,6 +267,19 @@ input[type=text], textarea {
     }
 
     .container-small{
-        all: unset;
+        max-width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .img-container{
+        width: 15%;
+    }
+
+    .line{
+        width: 120px;
+        height: 3px;
     }
 }
+
