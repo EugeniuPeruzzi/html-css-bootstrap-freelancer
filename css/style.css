@@ -74,6 +74,11 @@ input, textarea:focus{
     border-radius: 15px;
 }
 
+.none{
+    display: none;
+}
+
+
 .fa-star{
     font-size: 1.5rem;
 }
@@ -90,6 +95,10 @@ li > a{
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+
+li:hover a{
+    color: #fff;
 }
 
 img{
@@ -132,11 +141,12 @@ img{
     padding: 3px 8px;
     border-radius: 3px;
 }
-/* end phone */
-.tablet{
-    display: flex;
-    display: none;
+/* desktop*/
+.tablet > li{
+    margin: 0px 10px;
 }
+
+
 /* ======= MAIN PART ======= */
 /* start bootstrap */
 .col-12-content{
@@ -226,4 +236,37 @@ input[type=text], textarea {
 
 .copyright{
     margin: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+
+    .block{
+        display: block;
+    }
+    
+    .tablet{
+        justify-content: flex-end;
+    }
+
+    .img-container{
+        width: 25%;
+    }
+
+    .col-12-content > h4 {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .col-12-content{
+        text-align: center;
+    }
+
+    .container-small{
+        all: unset;
+    }
 }
