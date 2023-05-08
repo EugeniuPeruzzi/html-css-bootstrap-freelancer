@@ -281,5 +281,9 @@ input[type=text], textarea {
         width: 120px;
         height: 3px;
     }
+
+    .circle{
+        padding: 5px;
+    }
 }
 
